@@ -9,12 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return (MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Color(0xFF2B475E),
         appBar: AppBar(
           backgroundColor: Colors.black,
           titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
-          title: Center(child: Text('AhmedGamal')),
+          title: Center(child: Text('Protofolio')),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -25,10 +26,10 @@ class MyApp extends StatelessWidget {
               child: CircleAvatar(
                   radius: 80,
                   backgroundImage: AssetImage(
-                      'D:/Flutter Course (Tharwat Samy)/practice/images/tharwat.png')),
+                      'D:/Flutter Projects/Business Card App/images/Profile-photo.jpeg')),
             ),
             Text(
-              'Ahmed Gamal\'s Tech',
+              'Ahmed Gamal',
               style: TextStyle(
                   color: Colors.white, fontSize: 20, fontFamily: 'Pacifico'),
             ),
@@ -56,33 +57,7 @@ class MyApp extends StatelessWidget {
                 // spacing: 15,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 10, right: 20),
-                    child: Icon(
-                      Icons.phone,
-                      size: 25,
-                      color: Color(0xFF2B475E),
-                    ),
-                  ),
-                  Text(
-                    '+201008484956',
-                    style: TextStyle(fontSize: 18),
-                  ),
-                  Spacer(
-                    flex: 5,
-                  )
-                ],
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8), color: Colors.white),
-              height: 50,
-              margin: EdgeInsets.symmetric(horizontal: 20, vertical: 7),
-              child: Row(
-                // spacing: 15,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10, right: 20),
+                    padding: const EdgeInsets.only(left: 15, right: 20),
                     child: Icon(
                       Icons.mail,
                       size: 25,
