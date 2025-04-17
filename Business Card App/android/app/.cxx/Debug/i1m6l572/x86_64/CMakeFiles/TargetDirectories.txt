@@ -1,0 +1,2 @@
+D:/Flutter Projects/Business Card App/android/app/.cxx/Debug/i1m6l572/x86_64/CMakeFiles/edit_cache.dir
+D:/Flutter Projects/Business Card App/android/app/.cxx/Debug/i1m6l572/x86_64/CMakeFiles/rebuild_cache.dir

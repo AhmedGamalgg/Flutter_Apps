@@ -45,13 +45,15 @@ class MyApp extends StatelessWidget {
               margin: EdgeInsets.symmetric(horizontal: 20, vertical: 7),
               child: ListTile(
                 leading: Icon(Icons.phone_android),
-                title: Text('+201008484956'),
+                title: Text('+20 1008484956'),
               ),
             ),
             Container(
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8), color: Colors.white),
-              height: 50,
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.white,
+              ),
+              height: 55,
               margin: EdgeInsets.symmetric(horizontal: 20, vertical: 7),
               child: Row(
                 // spacing: 15,
