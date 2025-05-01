@@ -13,6 +13,7 @@ class ApiRequest {
       final List<ArticleModel> articleList = [];
       for (var article in articles) {
         ArticleModel articleModel = ArticleModel(
+            url:article['url'],
             image: article['urlToImage'],
             title: article['title'],
             subtitle: article['description']);

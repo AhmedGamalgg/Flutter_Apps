@@ -26,7 +26,6 @@ class CategoryListview extends StatelessWidget {
             );
           };
           return CategoryItem(item: itemList[index]);
-          
         },
       ),
     );
