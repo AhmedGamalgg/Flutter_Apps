@@ -28,6 +28,7 @@ class CountryWidget extends StatelessWidget {
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
+              textAlign: TextAlign.center,
             ),
             Text(
                 "Updated at: ${weatherModel.lastUpdated.hour}:${weatherModel.lastUpdated.minute.toString().padLeft(2, '0')}"),
@@ -66,7 +67,11 @@ class CountryWidget extends StatelessWidget {
             SizedBox(height: 30),
             Text(
               '${weatherModel.condition}',
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
             ),
           ],
         ),
