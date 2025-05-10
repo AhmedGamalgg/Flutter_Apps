@@ -37,9 +37,36 @@ class HomePage extends StatelessWidget {
         } else if (state is WeatherLoadedState) {
           return CountryWidget(weatherModel: state.weatherModel);
         } else {
-          return Center(
-              child: const Text(
-                  "Oops,There was an error, please try again later!"));
+          //No City Found Handling
+          return SizedBox(
+            width: double.infinity,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  "Oops,City Not Found",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.red.shade900,
+                  ),
+                ),
+                ElevatedButton.icon(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SearchPage(),
+                      ),
+                    );
+                  },
+                  icon: Icon(Icons.search),
+                  label: Text("Search Again!"),
+                )
+              ],
+            ),
+          );
         }
       }),
     );
